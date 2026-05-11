@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="particulas"></div>
+    <nav class="navegacao">
+        <ul class="menu">
+            <li><a href="#inicio" class="menu-link">Sobre mim</a></li>
+            <li><a href="#formacao" class="menu-link">Formação</a></li>
+            <li><a href="#projetos" class="menu-link">Portfólio</a></li>
+            <li><a href="#contatos" class="menu-link">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <div>
+            <img src="img/perfil.jpeg" alt="Foto de perfil" class="foto-perfil">
+            <h1>Jhonata Ribeiro</h1>
+            <p class="sub-titulo">Aprendendo a programar</p>
+        </div>
+    </main>
+
+    <section id="formacao" class="formacao">
+        <h2 class="form-titulo">Formação</h2>
+        <div class="form-bloco">
+            <p class="form-paragrafo">
+                Olá! Sou estudante de 20 anos cursando Ciências da Computação, muito curioso sempre interessado a
+                aprender coisas novas como JavaScript e futuramente pretendo trabalhar na área de Inteligência
+                Artificial.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meu Portfólio</h2>
+        <div class="projetos-bloco">
+            <div class="projetos-card">
+                <img src="img/refri_morango.jpeg" alt="imagem 1" class="projeto-img">
+                <img src="img/refri_abacate.jpeg" alt="imagem 2" class="projeto-img">
+                <img src="img/refri_laranja.jpeg" alt="imagem 3" class="projeto-img">
+                <div class="caixa-texto-projetos">
+                    <h3 class="title-card">Drinks</h3>
+                    <p class="paragrafo-projetos">Propaganda de lançamento de bebidas modernas com sabores
+                        diversificados.</p>
+                </div>
+            </div>
+
+
+            <div class="projetos-card">
+                <img src="img/mario1.png" alt="imagem 1" class="projeto-img">
+                <img src="img/mario2.png" alt="imagem 2" class="projeto-img">
+                <img src="img/mario3.png" alt="imagem 3" class="projeto-img">
+                <div class="caixa-texto-projetos">
+                    <h3 class="title-card">Jogo</h3>
+                    <p class="paragrafo-projetos">Jogo de plataforma do mario para se divertir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Contatos</h2>
+        <div class="redes">
+            <img src="img/instagram.png" alt="instragram" onclick="abrirInsta()" class="icone">
+            <img src="img/whatssap.png" alt="whatssap" onclick="abrirZap()" class="icone">
+            <img src="img/github.png" alt="github" onclick="abrirGit()" class="icone">
+        </div>
+    </section>
+
+    <section>
+        <div class="dev">
+            <h3 class="dev-titulo">Desenvolvido:</h3>
+            <img src="img/html.png" alt="html" class="linguagem">
+            <img src="img/css.png" alt="css" class="linguagem">
+            <img src="img/js.png" alt="js" class="linguagem">
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
