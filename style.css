@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /*Rolagem mais fluída*/
 }
-
+/*Criando variáveis de cores*/
 :root {
     --titulos: #00FF9F;
     --texto: #D1D5DB;
@@ -40,7 +40,7 @@ body {
     position: relative;
     padding: 0.5rem 0;
 }
-
+/*Estilizando os menus*/
 .menu-link::after {
     content: '';
     height: 2px;
@@ -64,14 +64,14 @@ body {
     flex-direction: column;
     text-align: center;
 }
-
+/*Ajustando a foto e chamando a animação flutuar*/
 .foto-perfil {
     width: 350px;
     height: 350px;
     border: 3px solid #00FF9F;
     box-shadow: 0 0 25px #00FF9F;
     border-radius: 50%;
-    animation: flutuar 5s ease-in-out infinite;
+    animation: flutuar 5s ease-in-out infinite; /*Chamando a animação*/
 }
 
 h1 {
@@ -97,7 +97,7 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
 }
-
+/*Estilizando o bloco da seção formação*/
 .form-bloco {
     padding: 2rem;
     max-width: 800px;
@@ -128,9 +128,9 @@ h1 {
 
 .projetos-card:hover {
     box-shadow: 0 10px 20px #00FF9F;
-    transform: translateY(-10px) scale(1.03);
+    transform: translateY(-10px) scale(1.03); /*Reposicionando o elemento*/
 }
-
+/*Criando colunas para armazenar os projetos*/
 .projetos-bloco {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -203,7 +203,7 @@ h1 {
 
 .icone:hover {
     transform: scale(1.5);
-    filter: drop-shadow(0 0 10px #00FF9F);
+    filter: drop-shadow(0 0 10px #00FF9F); /*Sombreando o elemento*/
 }
 
 .dev {
@@ -236,10 +236,10 @@ h1 {
     z-index: -1;
     opacity: 0.5;
     background: 
-    radial-gradient(circle at 20% 30%, rgba(0,255,159,0.15) 0%, transparent 25%),
-    radial-gradient(circle at 80% 70%, rgba(0,255,159,0.10) 0%, transparent 25%);
+    radial-gradient(circle at 20% 30%, rgba(0,255,159,0.15) 0%, transparent 25%), /*Mudando a cor em formato de círculo*/
+    radial-gradient(circle at 80% 70%, rgba(0,255,159,0.10) 0%, transparent 25%); /*Mudando a cor em formato de círculo*/
 }
-
+/*Animação da foto de perfil*/
 @keyframes flutuar {
     0%, 100% {
         transform: translateY(0);
@@ -248,7 +248,7 @@ h1 {
         transform: translateY(-20px);
     }
 }
-
+/*Adaptando os elementos pra mobile*/
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
