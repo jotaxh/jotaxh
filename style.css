@@ -247,3 +247,19 @@ h1 {
         transform: translateY(-20px);
     }
 }
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .foto-perfil {
+        width: 220px;
+        height: 220px;
+    }
+
+    .menu {
+        gap: 1.5rem;
+        font-size: 14px;
+    }
+}
