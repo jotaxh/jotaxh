@@ -209,7 +209,6 @@ h1 {
 .dev {
     display: flex;
     gap: 10px;
-    padding-top: 30px;
 }
 .dev-titulo {
     color: #95eed8;
@@ -262,5 +261,8 @@ h1 {
     .menu {
         gap: 1.5rem;
         font-size: 14px;
+    }
+    .dev {
+        padding-top: 30px;
     }
 }
